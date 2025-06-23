@@ -87,7 +87,7 @@
     cursor: pointer;
     pointer-events: visible;
     /* Mobile styles */
-    background-image: url('[%MobileImage%]');
+    background-image: url('[%BG_IMAGE%]');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

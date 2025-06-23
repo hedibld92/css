@@ -95,7 +95,7 @@
 /* Desktop styles */
 @media screen and (min-width: 640px) {
     .dfp_interstitial__content {
-        background-image: url('[%DesktopImage%]');
+        background-image: url('[%BG_IMAGE%]');
         background-repeat: no-repeat;
         background-position: top;
         background-size: contain;
@@ -105,7 +105,7 @@
 /* Mobile styles */
 @media screen and (max-width: 639px) {
     .dfp_interstitial__content {
-        background-image: url('[%MobileImage%]');
+        background-image: url('[%BG_IMAGE%]');
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
