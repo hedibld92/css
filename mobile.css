@@ -1,0 +1,99 @@
+#dfp_interstitial {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: [%BackgroundColor%];
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    padding: 0;
+    z-index: 100000000;
+    pointer-events: visible;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none; 
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+#dfp_interstitial__top {
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+#dfp_interstitial__top-logo {
+    position: fixed;
+    top: 3px;
+    left: 10px;
+    width: 100px; /* Plus petit sur mobile */
+    height: 25px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#dfp_interstitial__top-close {
+    cursor: default;
+    position: fixed;
+    font-family: Arial, sans-serif;
+    top: 8px;
+    right: 10px; /* Plus près du bord sur mobile */
+    background-color: #1e1e1e;
+    font-size: 11px; /* Plus petit sur mobile */
+    line-height: 13px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 4px 6px; /* Plus compact */
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+    pointer-events: none;
+}
+
+.dfp_interstitial__arrow-right {
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 4px 0 4px 3px; /* Plus petit sur mobile */
+    border-color: transparent transparent transparent #ffffff;
+    line-height: 0px;
+}
+
+.dfp_interstitial__click {
+    width: 100%;
+    height: 100%;
+}
+
+.dfp_interstitial__content {
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    pointer-events: visible;
+    /* Mobile styles */
+    background-image: url('[%MobileImage%]');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-direction: column;
+}
+
+.st-adunit {
+    display: none;
+} 
