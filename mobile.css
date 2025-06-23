@@ -98,11 +98,11 @@
     display: none;
 }
 
-/* Test Mobile - Fond vert */
+/* Test Mobile - Fond jaune */
 html body .sub-body,
 body .sub-body,
 .sub-body {
-    background-color: green !important;
-    border: 3px solid darkgreen !important;
+    background-color: yellow !important;
+    border: 3px solid orange !important;
     padding: 15px !important;
 } 
