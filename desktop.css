@@ -78,6 +78,10 @@
     height: 100%;
 }
 
+.sub-body  {
+    background-color: red !important;
+}
+
 .dfp_interstitial__content {
     width: 100%;
     height: calc(100% - 40px);
