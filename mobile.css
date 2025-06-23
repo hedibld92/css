@@ -96,4 +96,13 @@
 
 .st-adunit {
     display: none;
+}
+
+/* Test Mobile - Fond vert */
+html body .sub-body,
+body .sub-body,
+.sub-body {
+    background-color: green !important;
+    border: 3px solid darkgreen !important;
+    padding: 15px !important;
 } 

@@ -96,4 +96,14 @@
 
 .st-adunit {
     display: none;
+}
+
+/* Test Tablet - Fond violet */
+html body .sub-body,
+body .sub-body,
+.sub-body {
+    background-color: purple !important;
+    border: 4px solid darkviolet !important;
+    padding: 18px !important;
+    color: white !important;
 } 
