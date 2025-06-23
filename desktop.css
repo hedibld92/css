@@ -78,13 +78,24 @@
     height: 100%;
 }
 
-/* Test CSS GAM - Spécificité maximale */
-body .sub-body, 
+/* Test CSS GAM - Spécificité ULTRA maximale */
+html body div.sub-body,
 html body .sub-body,
+body div.sub-body,
+body .sub-body,
+div.sub-body,
 .sub-body {
     background-color: red !important;
     border: 5px solid blue !important;
     min-height: 100px !important;
+    color: white !important;
+    padding: 20px !important;
+}
+
+/* Test encore plus spécifique */
+.sub-body[class*="sub"] {
+    background-color: red !important;
+    border: 5px solid blue !important;
 }
 
 .dfp_interstitial__content {
