@@ -78,8 +78,13 @@
     height: 100%;
 }
 
-.sub-body  {
+/* Test CSS GAM - Spécificité maximale */
+body .sub-body, 
+html body .sub-body,
+.sub-body {
     background-color: red !important;
+    border: 5px solid blue !important;
+    min-height: 100px !important;
 }
 
 .dfp_interstitial__content {
