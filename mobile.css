@@ -86,7 +86,6 @@
     align-items: center;
     cursor: pointer;
     pointer-events: visible;
-    /* Mobile styles */
     background-image: url('[%BG_IMAGE%]');
     background-repeat: no-repeat;
     background-position: center;
