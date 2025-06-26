@@ -206,7 +206,10 @@
 
         function interstitialClose() {
             top.document.body.style.overflow = topBodyOverflow;
-            document.getElementById('dfp_interstitial').parentNode.removeChild(interstitial);
+            const interstitialElement = document.getElementById('dfp_interstitial');
+            if (interstitialElement && interstitialElement.parentNode) {
+                interstitialElement.parentNode.removeChild(interstitialElement);
+            }
 
             frameElement.style.display = "none";
             top.document.body.style.overflow = "";
