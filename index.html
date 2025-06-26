@@ -51,9 +51,11 @@
         removeZIndex();
 
         (function init() {
-            preventScroll();
+            // Attendre que le DOM soit complètement chargé
+            setTimeout(() => {
+                preventScroll();
 
-            // Fonction pour gérer swg-dialog et swg-popup-background
+                // Fonction pour gérer swg-dialog et swg-popup-background
             function handleSwgElements() {
                 try {
                     const dialog = top.document.querySelector('.swg-dialog');
@@ -159,6 +161,7 @@
             if (hostname.includes("jeuxvideo")) {
                 interstitialSite.style.cssText += "pointer-events: visible;";
             }
+            }, 500); // Délai pour que le DOM soit prêt
         })();
 
         function preventScroll() {
@@ -216,6 +219,7 @@
             if(dalilymotionPlayer){
                 dalilymotionPlayer.style.display = "block";
             }
+            
 
             //Event Tracking - close-button
             var trackingCloseButton = createTracking('https://pubads.g.doubleclick.net/activity;xsp=5151585;ord=');
